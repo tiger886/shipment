@@ -1,0 +1,32 @@
+shipment
+===========================
+
+###########环境依赖
+JDK 1.8
+Maven
+chrome
+
+###########部署步骤
+1. 编译
+    mvn clean package
+2. 运行
+  java -jar  xx.jar
+
+3. 接口文档
+   http:localhost:8080/doc.html
+4. h2 访问
+   http://localhost:8080/h2-console
+   username: ship
+   password: ship
+
+
+
+###########功能介绍
+业务分为 订单，物流（接口文档）
+1.生成订单（create order）：参数 订单重量，物流数量
+2.生成物流信息（allocate shipments）
+3.拆分物流（split shipments）
+4.合并物流（merge shipments）
+5.修改订单重量（change root quantity）
+
+

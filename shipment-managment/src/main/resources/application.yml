@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    schema: classpath:db/h2_schema.sql
+    data: classpath:db/data_init.sql
+    url: jdbc:h2:mem:shipment;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE;MODE=MYSQL
+    username: ship
+    password: ship
+  h2:
+    console:
+      enabled: true
+  rsocket:
+    server:
+      port: 8080
